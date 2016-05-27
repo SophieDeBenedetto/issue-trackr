@@ -1,5 +1,5 @@
 <%=form_for repository, remote: true do |f| %>
  url
-  <%=f.text_field :url%>
+  <%=f.text_field :url, id: "repo-input"%>
   <%=f.submit "+", class: "btn btn-primary"%>
 <%end%>

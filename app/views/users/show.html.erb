@@ -4,14 +4,9 @@
   <p>email: <%=@user.email%></p>
 </div>
 
-<ul class="list-group">
-  <%@user.repositories.each do |repo|%>
-    <li class="list-group-item">
-      <span class="badge"><%=repo.issues.count%></span>
-      <%=repo.name%>
-    </li>
-  <%end%>
-</ul>
+<div data-id="repo-list">
+  <%= render partial: "repositories/repos", locals: {repositories: @user.repositories}%>
+</div>
 </div>
 
 <div class="col-md-2 col-md-offset-5" style="text-align: center;">

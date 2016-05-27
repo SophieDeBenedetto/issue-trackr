@@ -1,0 +1,8 @@
+<ul class="list-group">
+  <%repositories.each do |repo|%>
+    <li class="list-group-item">
+      <span class="badge"><%=repo.issues.count%></span>
+      <%=repo.name%>
+    </li>
+  <%end%>
+</ul>
