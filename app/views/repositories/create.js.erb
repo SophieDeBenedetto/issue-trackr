@@ -1,0 +1,8 @@
+$("input#repo-input").val(" ")
+$("#myModal").modal("toggle")
+<% if @repo.errors%>
+  $("#errors").html("<%= j render(partial: 'repositories/errors', locals: {errors: @repo.errors.messages})%>")
+<%else%>
+  $("#errors").html(" ")
+  $("div[data-id='repo-list']").html("<%= j render(partial: 'repositories/repos', locals: {repositories: current_user.repositories}) %> ")
+<%end%>
