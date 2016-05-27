@@ -1,5 +1,7 @@
-<div class="jumbotron">
-  <h1><image src="<%=@user.avatar_url%>" id="profile-avatar"> Hi, <%=@user.name%></h1>
+<div class="jumbotron profile">
+  <h1 id="profile-name"><image src="<%=@user.avatar_url%>" id="profile-avatar"> Hi, <%=@user.name%></h1>
+  <p>github username: <%=link_to @user.github_username, "https://github.com/#{@user.github_username}", target: "blank"%></p>
+  <p>email: <%=@user.email%></p>
 </div>
 
 <ul class="list-group">
