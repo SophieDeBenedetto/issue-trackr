@@ -1,0 +1,17 @@
+<div class="jumbotron">
+  <h1><image src="<%=@user.avatar_url%>" id="profile-avatar"> Hi, <%=@user.name%></h1>
+</div>
+
+<ul class="list-group">
+  <%@user.repositories.each do |repo|%>
+    <li class="list-group-item">
+      <span class="badge"><%=repo.issues.count%></span>
+      <%=repo.name%>
+    </li>
+  <%end%>
+</ul>
+</div>
+
+<div class="col-md-2 col-md-offset-5" style="text-align: center;">
+  <%=render partial: 'repositories/modal'%>
+</div>
