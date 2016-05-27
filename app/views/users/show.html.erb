@@ -4,11 +4,14 @@
   <p>email: <%=@user.email%></p>
 </div>
 
+<div style="text-align: center; margin-bottom: 2%;">
+  <%=render partial: 'repositories/modal'%>
+</div>
+
 <div data-id="repo-list">
   <%= render partial: "repositories/repos", locals: {repositories: @user.repositories}%>
 </div>
+<div id="errors" style="margin-bottom: 5%">
 </div>
 
-<div class="col-md-2 col-md-offset-5" style="text-align: center;">
-  <%=render partial: 'repositories/modal'%>
-</div>
+

@@ -1,0 +1,12 @@
+<div class="panel panel-danger">
+  <div class="panel-heading">
+    <h3 class="panel-title">could not save repo! <span class="glyphicon glyphicon-remove-sign" id="close-repo-error-panel" data-panel="close"></span></h3>
+  </div>
+   <div class="panel-body">
+    <%errors.each do |type, messages|%> 
+      <%messages.each do |msg| %>
+        <p style="margin-left: 3%; margin-top: 1%;"><span class="glyphicon glyphicon-warning-sign"></span> <%=msg%></p>
+      <%end%>
+    <%end%>
+  </div>
+</div>
