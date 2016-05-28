@@ -24,6 +24,9 @@ class WebhooksController < ApplicationController
           from: "+1 #{ENV['TWILIO_NUMBER']}",
            body: "#{issue.title} has been updated. View it here: #{issue.url}")
       end
+      UserMailer.issue_update_email(issue.user, issue).deliver_now
+      head :no_content
+      return
     end
   end
 
