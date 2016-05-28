@@ -12,7 +12,8 @@ function hideErrors(){
 
 function toggleIssues(){
   $("[data-id='repo-list']").on("click", $("#issue-count"), function(e){
-    repoId = e.data.data().repo
+    repoId = e.toElement.dataset.repo
     $("[data-issue-repo='" + repoId + "']").slideToggle();
   })
 }
+
