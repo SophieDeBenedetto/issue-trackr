@@ -8,7 +8,14 @@ class WebhooksController < ApplicationController
       head :no_content
       return
     else
-     binding.pry
+      issue = Issue.find_or_create_by(url: issue_params["html_url"])
+      issue.update(title: issue_params["title"], content: issue_params["body"], assignee: issue_params["assignee"], status: issue_params["state"])
     end
   end
+
+  private
+
+    def issue_params
+      params["issue"]
+    end
 end
