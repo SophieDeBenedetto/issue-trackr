@@ -32,6 +32,7 @@ gem 'bcrypt', '~> 3.1.7'
 gem 'puma'
 # gem 'dotenv'
 gem 'figaro'
+gem 'twilio-ruby', '~> 4.11.1'
 
 # Use Unicorn as the app server
 # gem 'unicorn'
