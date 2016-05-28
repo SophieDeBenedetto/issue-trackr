@@ -1,6 +1,7 @@
 Rails.application.routes.draw do
 
   root "home#show"
+  get '/about', to: "home#about", as: "about"
   resources :issues
   resources :repositories
   resources :users
