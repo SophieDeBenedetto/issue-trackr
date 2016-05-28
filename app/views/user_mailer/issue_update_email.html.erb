@@ -1,0 +1,6 @@
+<h1>Hi <%=@user.name%></h1>
+
+<p>One of the issues you've been tracking has been updated!</p>
+<p>You can view it on github <a href="<%=@issue.url%>"> here</a></p>
+<p>Or, you can view it on Issue Trackr <a href="<%=ENV['ISSUE_TRACKR_APP_URL']%>/issues/<%=@issue.id%>">here</a></p>
+<p><3 the issue trackr team</p>
