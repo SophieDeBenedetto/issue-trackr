@@ -23,9 +23,14 @@ class RepositoriesController < ApplicationController
       @client.issues("#{repo_owner}/#{repo_name}").each do |issue|
         Issue.create(url: issue.html_url, opened_by: issue.user.login, status: issue.state, title: issue.title, content: issue.body, opened_on: issue.created_at, assignee: issue.assignee, repository: @repo)
       end
+      @client.create_hook("#{repo_owner}/#{repo_name}",
+        'web',
+        {url: "#{ENV['ISSUE_TRACKR_APP_URL']}/webhooks/receive", content_type: 'json'},
+        {events: ['issues'], active: true})
     end
     respond_to do |f|
       f.js
     end
   end
 end
+
