@@ -1,28 +1,17 @@
-== README
+# TODO:
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+* make sure webhooks are being added when repo is created
+* issue show page
+* test webhook by - adding issue, closing issue, changing issue\
+* send email and text when issue has been updated from webhook
 
-Things you may want to cover:
+## Tests
+* issue updating from webhook
+* log in user via clicking gh link
+* visiting issue page and seeing correct times or other design stuff
+* visitng user show and seeing correctly formatted name of repo
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+## Refactor
+* adapter pattern for gh communication
+* service objects for updating issues from webhooks payload
+* decoraters for repo name, issue created on
