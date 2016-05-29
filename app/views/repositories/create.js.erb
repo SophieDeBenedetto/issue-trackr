@@ -1,6 +1,6 @@
 $("input#repo-input").val(" ")
 $("#myModal").modal("toggle")
-<% if @repo.errors%>
+<% if !@repo.valid?%>
   $("#errors").html("<%= j render(partial: 'repositories/errors', locals: {errors: @repo.errors.messages})%>")
 <%else%>
   $("#errors").html(" ")
