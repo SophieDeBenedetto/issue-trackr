@@ -30,6 +30,7 @@ class RepositoriesController < ApplicationController
     end
     respond_to do |f|
       f.js
+      f.html {head :no_content; return}
     end
   end
 end
