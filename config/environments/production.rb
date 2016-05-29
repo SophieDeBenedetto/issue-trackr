@@ -87,3 +87,6 @@ Rails.application.configure do
    :enable_starttls_auto   => true
     }
 end
+
+ENV["ISSUE_TRACKR_APP_URL"] = " https://issue-trackr.herokuapp.com"
+
