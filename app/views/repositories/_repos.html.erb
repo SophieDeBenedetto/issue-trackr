@@ -1,9 +1,5 @@
-<ul class="list-group">
+<ul class="list-group" data-id="repo-list-items">
   <%repositories.each do |repo|%>
-    <li class="list-group-item">
-      <span class="badge" data-repo="<%=repo.id%>" id="issue-count"><%=repo.issues.count%></span>
-      <strong><%=repo.name.gsub("-", " ").capitalize %></strong>
-        <%= render partial: "issues/issue", collection: repo.issues%>
-    </li>
+    <%= render partial: "repositories/repo", locals: {repo: repo}%>
   <%end%>
 </ul>
