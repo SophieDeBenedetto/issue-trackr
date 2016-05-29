@@ -4,7 +4,7 @@ class User < ActiveRecord::Base
   before_save :normalize_phone_number
   # validates :url, uniqueness: true, presence: true, format: {with: /https:\/\/github.com/, message: "must be a valid github url"}
 
-  validates :phone_number, format: {with: /\d{3}-\d{3}-\d{4}/}
+  validates :phone_number, format: {with: /\d{3}-\d{3}-\d{4}/}, allow_nil: true
 
   def self.find_or_create_from_omniauth(auth)
     User.find_or_create_by(github_uid: auth["uid"]).tap do |u|
@@ -17,7 +17,7 @@ class User < ActiveRecord::Base
   end
 
   def display_phone_number
-    !phone_number.empty? ? phone_number : "<i>add your phone number to receive text message updates</i>".html_safe
+    !phone_number.empty? ? phone_number : "<i>add your phone number to receive text message updates</i>".html_safe if phone_number
   end
 
   def normalize_phone_number

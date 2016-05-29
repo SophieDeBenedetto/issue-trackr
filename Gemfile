@@ -46,6 +46,17 @@ group :development, :test do
   gem 'pry-rails'
 end
 
+group :test do 
+  gem 'vcr'
+  gem 'webmock'
+  gem "capybara-webkit"
+  gem "selenium"
+  gem 'rspec-rails'
+  gem 'database_cleaner'
+  gem 'pry-rails'
+  gem 'launchy'
+end
+
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'web-console', '~> 2.0'

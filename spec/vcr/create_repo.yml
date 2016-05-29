@@ -1,0 +1,231 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/repos/sophiedebenedetto/learn-write
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.beta+json
+      User-Agent:
+      - Octokit Ruby Gem 2.7.2
+      Authorization:
+      - token <GITHUB_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Sun, 29 May 2016 01:12:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4999'
+      X-Ratelimit-Reset:
+      - '1464487969'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      Etag:
+      - W/"509efda50450ab2d4a01a3ac7ba4dd09"
+      Last-Modified:
+      - Thu, 25 Feb 2016 19:04:28 GMT
+      X-Oauth-Scopes:
+      - admin:repo_hook, repo, user
+      X-Accepted-Oauth-Scopes:
+      - repo
+      X-Github-Media-Type:
+      - github.beta; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - cee4c0729c8e9147e7abcb45b9d69689
+      X-Github-Request-Id:
+      - 620EF307:7F8E:D6C2303:574A4211
+    body:
+      encoding: UTF-8
+      string: '{"id":46446600,"name":"learn-write","full_name":"SophieDeBenedetto/learn-write","owner":{"login":"SophieDeBenedetto","id":8999596,"avatar_url":"https://avatars.githubusercontent.com/u/8999596?v=3","gravatar_id":"","url":"https://api.github.com/users/SophieDeBenedetto","html_url":"https://github.com/SophieDeBenedetto","followers_url":"https://api.github.com/users/SophieDeBenedetto/followers","following_url":"https://api.github.com/users/SophieDeBenedetto/following{/other_user}","gists_url":"https://api.github.com/users/SophieDeBenedetto/gists{/gist_id}","starred_url":"https://api.github.com/users/SophieDeBenedetto/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/SophieDeBenedetto/subscriptions","organizations_url":"https://api.github.com/users/SophieDeBenedetto/orgs","repos_url":"https://api.github.com/users/SophieDeBenedetto/repos","events_url":"https://api.github.com/users/SophieDeBenedetto/events{/privacy}","received_events_url":"https://api.github.com/users/SophieDeBenedetto/received_events","type":"User","site_admin":false},"private":false,"html_url":"https://github.com/SophieDeBenedetto/learn-write","description":"","fork":false,"url":"https://api.github.com/repos/SophieDeBenedetto/learn-write","forks_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/forks","keys_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/keys{/key_id}","collaborators_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/collaborators{/collaborator}","teams_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/teams","hooks_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/hooks","issue_events_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/issues/events{/number}","events_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/events","assignees_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/assignees{/user}","branches_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/branches{/branch}","tags_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/tags","blobs_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/git/blobs{/sha}","git_tags_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/git/tags{/sha}","git_refs_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/git/refs{/sha}","trees_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/git/trees{/sha}","statuses_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/statuses/{sha}","languages_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/languages","stargazers_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/stargazers","contributors_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/contributors","subscribers_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/subscribers","subscription_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/subscription","commits_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/commits{/sha}","git_commits_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/git/commits{/sha}","comments_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/comments{/number}","issue_comment_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/issues/comments{/number}","contents_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/contents/{+path}","compare_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/compare/{base}...{head}","merges_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/merges","archive_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/{archive_format}{/ref}","downloads_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/downloads","issues_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/issues{/number}","pulls_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/pulls{/number}","milestones_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/milestones{/number}","notifications_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/notifications{?since,all,participating}","labels_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/labels{/name}","releases_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/releases{/id}","deployments_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/deployments","created_at":"2015-11-18T20:49:14Z","updated_at":"2016-02-25T19:04:28Z","pushed_at":"2016-03-31T13:56:57Z","git_url":"git://github.com/SophieDeBenedetto/learn-write.git","ssh_url":"git@github.com:SophieDeBenedetto/learn-write.git","clone_url":"https://github.com/SophieDeBenedetto/learn-write.git","svn_url":"https://github.com/SophieDeBenedetto/learn-write","homepage":null,"size":60,"stargazers_count":1,"watchers_count":1,"language":"Ruby","has_issues":true,"has_downloads":true,"has_wiki":true,"has_pages":false,"forks_count":1,"mirror_url":null,"open_issues_count":2,"forks":1,"open_issues":2,"watchers":1,"default_branch":"master","master_branch":"master","permissions":{"admin":true,"push":true,"pull":true},"network_count":1,"subscribers_count":1}'
+    http_version: 
+  recorded_at: Sun, 29 May 2016 01:12:49 GMT
+- request:
+    method: get
+    uri: https://api.github.com/repos/sophiedebenedetto/learn-write/issues
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/vnd.github.beta+json
+      User-Agent:
+      - Octokit Ruby Gem 2.7.2
+      Authorization:
+      - token <GITHUB_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Sun, 29 May 2016 01:12:49 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4998'
+      X-Ratelimit-Reset:
+      - '1464487969'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      Etag:
+      - W/"04c9d53681bd6784465416a6e726303e"
+      X-Oauth-Scopes:
+      - admin:repo_hook, repo, user
+      X-Accepted-Oauth-Scopes:
+      - repo
+      X-Github-Media-Type:
+      - github.beta; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - e724c57ebb9961c772a91e2dd7421c8d
+      X-Github-Request-Id:
+      - 620EF307:7F8F:1270632C:574A4211
+    body:
+      encoding: UTF-8
+      string: '[{"url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/issues/4","repository_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write","labels_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/issues/4/labels{/name}","comments_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/issues/4/comments","events_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/issues/4/events","html_url":"https://github.com/SophieDeBenedetto/learn-write/issues/4","id":157309486,"number":4,"title":"update
+        the thing/test","user":{"login":"SophieDeBenedetto","id":8999596,"avatar_url":"https://avatars.githubusercontent.com/u/8999596?v=3","gravatar_id":"","url":"https://api.github.com/users/SophieDeBenedetto","html_url":"https://github.com/SophieDeBenedetto","followers_url":"https://api.github.com/users/SophieDeBenedetto/followers","following_url":"https://api.github.com/users/SophieDeBenedetto/following{/other_user}","gists_url":"https://api.github.com/users/SophieDeBenedetto/gists{/gist_id}","starred_url":"https://api.github.com/users/SophieDeBenedetto/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/SophieDeBenedetto/subscriptions","organizations_url":"https://api.github.com/users/SophieDeBenedetto/orgs","repos_url":"https://api.github.com/users/SophieDeBenedetto/repos","events_url":"https://api.github.com/users/SophieDeBenedetto/events{/privacy}","received_events_url":"https://api.github.com/users/SophieDeBenedetto/received_events","type":"User","site_admin":false},"labels":[],"state":"open","locked":false,"assignee":null,"milestone":null,"comments":0,"created_at":"2016-05-28T00:02:06Z","updated_at":"2016-05-28T20:02:09Z","closed_at":null,"pull_request":{"url":null,"html_url":null,"diff_url":null,"patch_url":null},"body":"this
+        issue is a test. and i am changing it for the purposes of the test!!!!!!1111asdfadfasfdasfasdfasdf"},{"url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/issues/1","repository_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write","labels_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/issues/1/labels{/name}","comments_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/issues/1/comments","events_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/issues/1/events","html_url":"https://github.com/SophieDeBenedetto/learn-write/issues/1","id":121792517,"number":1,"title":"Node/npm
+        port","user":{"login":"azat-co","id":1137314,"avatar_url":"https://avatars.githubusercontent.com/u/1137314?v=3","gravatar_id":"","url":"https://api.github.com/users/azat-co","html_url":"https://github.com/azat-co","followers_url":"https://api.github.com/users/azat-co/followers","following_url":"https://api.github.com/users/azat-co/following{/other_user}","gists_url":"https://api.github.com/users/azat-co/gists{/gist_id}","starred_url":"https://api.github.com/users/azat-co/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/azat-co/subscriptions","organizations_url":"https://api.github.com/users/azat-co/orgs","repos_url":"https://api.github.com/users/azat-co/repos","events_url":"https://api.github.com/users/azat-co/events{/privacy}","received_events_url":"https://api.github.com/users/azat-co/received_events","type":"User","site_admin":false},"labels":[],"state":"open","locked":false,"assignee":null,"milestone":null,"comments":0,"created_at":"2015-12-11T21:12:24Z","updated_at":"2015-12-11T21:12:24Z","closed_at":null,"pull_request":{"url":null,"html_url":null,"diff_url":null,"patch_url":null},"body":"I
+        would like to create an npm module/port. What are the files that these gem
+        creates? "}]'
+    http_version: 
+  recorded_at: Sun, 29 May 2016 01:12:49 GMT
+- request:
+    method: post
+    uri: https://api.github.com/repos/sophiedebenedetto/learn-write/hooks
+    body:
+      encoding: UTF-8
+      string: '{"name":"web","config":{"url":"/webhooks/receive","content_type":"json"},"events":["issues"],"active":true}'
+    headers:
+      Accept:
+      - application/vnd.github.beta+json
+      User-Agent:
+      - Octokit Ruby Gem 2.7.2
+      Authorization:
+      - token <GITHUB_TOKEN>
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Sun, 29 May 2016 01:12:50 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '539'
+      Status:
+      - 201 Created
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4997'
+      X-Ratelimit-Reset:
+      - '1464487969'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      - Accept-Encoding
+      Etag:
+      - '"c2210ec5799a0786afdd5410c3c72ba5"'
+      X-Oauth-Scopes:
+      - admin:repo_hook, repo, user
+      X-Accepted-Oauth-Scopes:
+      - admin:repo_hook, public_repo, repo, write:repo_hook
+      Location:
+      - https://api.github.com/repos/SophieDeBenedetto/learn-write/hooks/8559338
+      X-Github-Media-Type:
+      - github.beta; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining, X-RateLimit-Reset,
+        X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Content-Security-Policy:
+      - default-src 'none'
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - deny
+      X-Xss-Protection:
+      - 1; mode=block
+      X-Served-By:
+      - a51acaae89a7607fd7ee967627be18e4
+      X-Github-Request-Id:
+      - 620EF307:7F8E:D6C232B:574A4212
+    body:
+      encoding: UTF-8
+      string: '{"type":"Repository","id":8559338,"name":"web","active":true,"events":["issues"],"config":{"url":"/webhooks/receive","content_type":"json"},"updated_at":"2016-05-29T01:12:50Z","created_at":"2016-05-29T01:12:50Z","url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/hooks/8559338","test_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/hooks/8559338/test","ping_url":"https://api.github.com/repos/SophieDeBenedetto/learn-write/hooks/8559338/pings","last_response":{"code":null,"status":"unused","message":null}}'
+    http_version: 
+  recorded_at: Sun, 29 May 2016 01:12:49 GMT
+recorded_with: VCR 3.0.1

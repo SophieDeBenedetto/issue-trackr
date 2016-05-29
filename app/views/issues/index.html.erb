@@ -1,0 +1,16 @@
+<h1>Your Issues</h1>
+
+<ul>
+   <%@issues.each do |issue|%>
+   <div class="panel panel-default">
+      <div class="panel-heading">
+         <h3 class="panel-title"><%=link_to issue.title, issue_path(issue)%></h3>
+      </div>
+      <div class="panel-body">
+        <p><strong>repo:</strong> <%=issue.repository.name.gsub("-", " ").capitalize%></p>
+        <p><strong>assignee:</strong> <%=issue.assignee || 'n/a'%></p>
+        <p><%=link_to "view on github", issue.url%></p>
+      </div>
+    </div>
+   <%end%>
+</ul>
