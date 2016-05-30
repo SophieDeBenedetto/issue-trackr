@@ -28,7 +28,9 @@ RSpec.configure do |config|
 
     mocks.verify_partial_doubles = true
   end
+  config.before(:each) { ActionMailer::Base.deliveries.clear }      
 
+  SmsSpec.driver = :"twilio-ruby"
   Capybara.javascript_driver = :webkit
 
   config.use_transactional_fixtures = false

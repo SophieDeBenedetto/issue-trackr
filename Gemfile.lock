@@ -171,6 +171,10 @@ GEM
     rake (11.1.2)
     rdoc (4.2.2)
       json (~> 1.4)
+    rspec (3.2.0)
+      rspec-core (~> 3.2.0)
+      rspec-expectations (~> 3.2.0)
+      rspec-mocks (~> 3.2.0)
     rspec-core (3.2.3)
       rspec-support (~> 3.2.0)
     rspec-expectations (3.2.1)
@@ -205,6 +209,8 @@ GEM
     selenium (0.2.11)
       jar_wrapper
     slop (3.6.0)
+    sms-spec (0.2.0)
+      rspec (~> 3.1)
     spring (1.7.1)
     sprockets (3.6.0)
       concurrent-ruby (~> 1.0)
@@ -265,6 +271,7 @@ DEPENDENCIES
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   selenium
+  sms-spec
   spring
   turbolinks
   twilio-ruby (~> 4.11.1)
